@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Welcome To My Form">
+		<title>Form</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<style>
+			body
+			{
+				background:#EFEFEF;
+				font-family:Arial, Tahoma
+			}
+			fieldset
+			{
+				background:#FFF;
+				border:1px solid #CCC;
+				padding:20px;
+				width:500px;
+				margin-buttom:20px;
+				margin:20px auto
+			}
+			legend
+			{
+				background:#FFF;
+				border:1px solid #CCC;
+				padding:10px
+			}
+			
+			label {margin-buttom: 10px; display:block}
+			
+			input{margin-buttom: 10px}
+			
+			input[type="text"],
+			input[type="password"],
+			textarea
+			{
+				padding:8px;
+				width:300px;
+				display:block;
+			}
+			hr {border:1px solid #EEE}
+			
+			textarea
+			{
+				height:200px
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+		
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>User name</label>
+				<input type="text" name="username">
+				
+				<label>Password</label>
+				<input type="password" name="password">
+				
+				<label>E-mail</label>
+				<input type="text" name="email">
+				
+				<label>Gender</label>
+				<select>
+					<option name="gender" value="male">Male</option>
+					<option name="gender" value="female">Female</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Your Favourite</legend>
+				<label>Your favourite editor</label>
+				<input type="radio" name="editor" value="komodo">Komodo<br>
+				<input type="radio" name="editor" value="notepad">NotePad<br>
+				<input type="radio" name="editor" value="vscode">VS code
+				<hr>
+				<label>Your favourite Browser</label>
+				<input type="radio" name="browser" value="chrome">Chrome<br>
+				<input type="radio" name="browser" value="firefox">Mozila FireFox<br>
+				<input type="radio" name="browser" value="opera">Opera
+				<hr>
+				<label>Your favourite Operating system</label>
+				<input type="checkbox" name="os" value="mac">Mac OSX<br>
+				<input type="checkbox" name="os" value="linux">Linux<br>
+				<input type="checkbox" name="os" value="windows">Windows
+			</fieldset>
+			
+			<fieldset>
+				<legend>Your Message</legend>
+				<textarea></textarea>
+				<input type="submit" value="Send Your Data">
+			</fieldset>
+		</form>
+	</body>
+</html>
